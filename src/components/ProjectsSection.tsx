@@ -6,34 +6,42 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Smart Campus Navigation System",
-    date: "Fall 2024",
-    description: "ML-powered indoor navigation system for Purdue campus using computer vision and sensor fusion. Reduced navigation time by 40% for students with disabilities.",
-    tech: ["Python", "TensorFlow", "React Native", "Node.js", "MongoDB"],
+    title: "Shell Interpreter",
+    date: "Mar 2025",
+    description: "Built a full shell in C with support for subshell command evaluation, wildcard expansion, redirection, and piping.",
+    tech: ["C", "Unix", "Systems Programming", "Process Management"],
     github: "#",
     demo: "#"
   },
   {
-    title: "Financial Portfolio Optimizer",
-    date: "Summer 2024",
-    description: "Algorithmic trading system using reinforcement learning to optimize portfolio allocation. Achieved 15% better performance than traditional models.",
-    tech: ["Python", "PyTorch", "FastAPI", "PostgreSQL", "Docker"],
+    title: "Simple C Compiler",
+    date: "Nov 2024",
+    description: "Wrote a custom C compiler that performs lexical analysis, parsing, and intermediate representation (IR) generation.",
+    tech: ["C", "Compiler Design", "Lexical Analysis", "Parsing"],
     github: "#",
     demo: "#"
   },
   {
-    title: "Sustainable Energy Predictor",
-    date: "Spring 2024",
-    description: "Time series forecasting model for renewable energy output prediction. Deployed at local energy cooperative serving 500+ households.",
-    tech: ["Python", "Scikit-learn", "Flask", "AWS", "Redis"],
+    title: "Personal Malloc in C",
+    date: "Jan 2025",
+    description: "Implemented a custom memory allocator using freelists and arenas, designed to mimic malloc/free behavior safely.",
+    tech: ["C", "Memory Management", "Data Structures", "Systems"],
     github: "#",
     demo: "#"
   },
   {
-    title: "Code Collaboration Platform",
-    date: "Winter 2024",
-    description: "Real-time collaborative coding environment with integrated version control and peer programming features for computer science education.",
-    tech: ["TypeScript", "React", "Socket.io", "Express", "Git"],
+    title: "Android SQLite Java Bookstore",
+    date: "Apr 2023",
+    description: "Built a mobile application using Android Studio and SQLite to manage inventory and transactions for a bookstore.",
+    tech: ["Java", "Android Studio", "SQLite", "Mobile Development"],
+    github: "#",
+    demo: "#"
+  },
+  {
+    title: "Java Marketplace",
+    date: "Nov 2023",
+    description: "Simulated an e-commerce platform with a backend in Java, featuring user accounts, product listings, and cart logic.",
+    tech: ["Java", "Backend Development", "E-commerce", "Object-Oriented Design"],
     github: "#",
     demo: "#"
   }
@@ -47,11 +55,11 @@ const ProjectsSection = () => {
           <h2 className="text-4xl md:text-5xl font-light text-charcoal mb-4">Featured Projects</h2>
           <div className="h-1 w-16 bg-coral mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A selection of projects showcasing my expertise in machine learning, systems design, and full-stack development.
+            A selection of projects showcasing my expertise in systems programming, compiler design, and software development.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card 
               key={index} 
