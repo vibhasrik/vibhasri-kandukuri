@@ -3,20 +3,14 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const skillsData = {
-  "Programming Languages": [
-    "Python", "TypeScript", "JavaScript", "Java", "C++", "SQL", "R", "Go"
+  "Languages": [
+    "Python (Pandas, NumPy)", "Java", "C", "R", "Bash", "Dart", "HTML/CSS", "SQLite", "x86-64 Assembly"
   ],
-  "Tools & Frameworks": [
-    "React", "Node.js", "TensorFlow", "PyTorch", "Docker", "AWS", "PostgreSQL", 
-    "MongoDB", "Git", "Kubernetes", "FastAPI", "Express.js"
-  ],
-  "Machine Learning & Data": [
-    "Deep Learning", "Computer Vision", "NLP", "Time Series Analysis", 
-    "Statistical Modeling", "Data Visualization", "MLOps", "Feature Engineering"
+  "Tools": [
+    "GitHub", "QGroundControl", "Jupyter", "LaTeX", "Notion", "Microsoft Suite"
   ],
   "Soft Skills": [
-    "Technical Leadership", "Research & Development", "Cross-functional Collaboration", 
-    "Mentoring", "Problem Solving", "Public Speaking", "Project Management"
+    "Agile development", "Cross-team collaboration", "Project leadership", "Communication"
   ]
 };
 
@@ -35,7 +29,7 @@ const SkillsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {Object.entries(skillsData).map(([category, skills], index) => (
             <Card key={index} className="glass-card hover:shadow-glow transition-all duration-300 hover:scale-[1.01]">
               <CardHeader className="pb-4">

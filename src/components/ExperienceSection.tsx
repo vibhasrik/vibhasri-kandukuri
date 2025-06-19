@@ -4,39 +4,49 @@ import { Badge } from "@/components/ui/badge";
 
 const experiences = [
   {
-    role: "Machine Learning Research Assistant",
-    company: "Purdue University",
+    role: "Team Lead & Software Engineering Researcher",
+    company: "AgRPA – Purdue University",
     location: "West Lafayette, IN",
-    date: "Aug 2024 - Present",
+    date: "Aug 2024 – May 2025",
     type: "Research",
     highlights: [
-      "Developed novel neural network architectures for time series forecasting, improving accuracy by 25%",
-      "Published research on sustainable energy prediction models in IEEE conference proceedings",
-      "Mentored 3 undergraduate students in machine learning fundamentals and research methodologies"
-    ]
-  },
-  {
-    role: "Software Engineering Intern",
-    company: "TechCorp Solutions",
-    location: "Chicago, IL",
-    date: "May 2024 - Aug 2024",
-    type: "Software Engineering",
-    highlights: [
-      "Built full-stack web applications serving 10,000+ users using React, Node.js, and PostgreSQL",
-      "Implemented CI/CD pipelines reducing deployment time by 60% and improving code quality",
-      "Collaborated with cross-functional teams to deliver 5 major features ahead of schedule"
+      "Optimized drone mapping and targeted fertilizer application, reducing resource usage by 30–70%",
+      "Generated flight waypoints from shapefiles using Python + QGroundControl",
+      "Acted as Team Lead, coordinating across multiple sub-teams"
     ]
   },
   {
     role: "Data Science Intern",
-    company: "Analytics Plus",
-    location: "Indianapolis, IN",
-    date: "Jan 2024 - Apr 2024",
+    company: "Vizzhy",
+    location: "Remote",
+    date: "May 2024 – Aug 2024",
     type: "Data Science",
     highlights: [
-      "Analyzed large datasets (1M+ records) to extract actionable business insights using Python and SQL",
-      "Created interactive dashboards with Tableau that influenced strategic decisions for C-suite executives",
-      "Optimized data processing pipelines, reducing computation time from hours to minutes"
+      "Analyzed patient data with Python (Pandas, NumPy)",
+      "Visualized correlations between diabetes and other health factors for preventative care plans"
+    ]
+  },
+  {
+    role: "ML & Data Science Researcher",
+    company: "Caterpillar – Purdue University",
+    location: "West Lafayette, IN",
+    date: "Aug 2023 – May 2024",
+    type: "Research",
+    highlights: [
+      "Developed a Flutter app for EV fleet battery tracking + charger scheduling",
+      "Predicted battery SoC using machine learning",
+      "Integrated frontend and backend analytics in Dart/Flutter"
+    ]
+  },
+  {
+    role: "Project Manager & Web Developer Intern",
+    company: "Hampshire Academia",
+    location: "Remote",
+    date: "Jun 2022 – Nov 2022",
+    type: "Software Engineering",
+    highlights: [
+      "Led agile team of 5 interns to build responsive web apps (HTML5, CSS3)",
+      "Served as Scrum Master and stakeholder liaison"
     ]
   }
 ];

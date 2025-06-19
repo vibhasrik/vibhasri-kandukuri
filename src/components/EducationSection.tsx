@@ -39,10 +39,10 @@ const EducationSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Badge className="bg-gradient-to-r from-teal/20 to-teal/30 text-teal px-4 py-2 text-base border-0">
+              <Badge className="bg-gradient-to-r from-coral/20 to-coral/30 text-coral px-4 py-2 text-base border-0">
                 Concentration: Machine Learning
               </Badge>
-              <Badge className="bg-gradient-to-r from-plum/20 to-plum/30 text-plum px-4 py-2 text-base border-0">
+              <Badge className="bg-gradient-to-r from-teal/20 to-teal/30 text-teal px-4 py-2 text-base border-0">
                 Minor: Finance
               </Badge>
             </div>
