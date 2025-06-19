@@ -49,11 +49,14 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="section-margin section-padding bg-white/50">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="section-margin section-padding relative">
+      {/* Background decoration */}
+      <div className="gradient-blob w-80 h-80 bg-plum/10 -top-20 -right-20 animate-blob" style={{ animationDelay: '1s' }}></div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light text-charcoal mb-4">Featured Projects</h2>
-          <div className="h-1 w-16 bg-coral mx-auto mb-6"></div>
+          <h2 className="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Featured Projects</h2>
+          <div className="h-1 w-16 bg-gradient-to-r from-coral to-teal mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A selection of projects showcasing my expertise in systems programming, compiler design, and software development.
           </p>
@@ -63,16 +66,16 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white border-2 border-transparent hover:border-teal/20"
+              className="glass-card group hover:shadow-glow transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02]"
             >
               <CardHeader className="pb-4">
                 <div className="flex justify-between items-start mb-2">
                   <CardTitle className="text-xl font-medium text-charcoal group-hover:text-coral transition-colors">
                     {project.title}
                   </CardTitle>
-                  <span className="text-sm text-muted-foreground font-mono">{project.date}</span>
+                  <span className="text-sm text-plum/70 font-mono bg-white/50 px-2 py-1 rounded-full">{project.date}</span>
                 </div>
-                <CardDescription className="text-base leading-relaxed">
+                <CardDescription className="text-base leading-relaxed text-muted-foreground">
                   {project.description}
                 </CardDescription>
               </CardHeader>
@@ -83,7 +86,7 @@ const ProjectsSection = () => {
                     <Badge 
                       key={techIndex} 
                       variant="secondary" 
-                      className="bg-teal/10 text-teal hover:bg-teal/20"
+                      className="bg-gradient-to-r from-teal/20 to-coral/20 text-charcoal border-0 hover:from-teal/30 hover:to-coral/30 transition-all duration-200"
                     >
                       {tech}
                     </Badge>
@@ -91,11 +94,11 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="border-charcoal text-charcoal hover:bg-charcoal hover:text-white">
+                  <Button variant="outline" size="sm" className="glass-card border-charcoal/20 text-charcoal hover:bg-charcoal/5 hover:text-charcoal hover:scale-105 transition-all duration-200">
                     <Github className="w-4 h-4 mr-2" />
                     Code
                   </Button>
-                  <Button variant="outline" size="sm" className="border-teal text-teal hover:bg-teal hover:text-white">
+                  <Button variant="outline" size="sm" className="glass-card border-teal/30 text-teal hover:bg-teal/10 hover:text-teal hover:scale-105 transition-all duration-200">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Demo
                   </Button>
@@ -104,6 +107,13 @@ const ProjectsSection = () => {
             </Card>
           ))}
         </div>
+      </div>
+
+      {/* Wave divider */}
+      <div className="wave-divider">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0 0L1200 0 1200 60.52L0 120z" fill="rgba(246, 139, 125, 0.05)"></path>
+        </svg>
       </div>
     </section>
   );

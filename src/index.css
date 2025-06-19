@@ -92,6 +92,8 @@
 
   body {
     @apply bg-background text-foreground font-sans;
+    background: linear-gradient(135deg, #F9F1DB 0%, #F5E6F0 50%, #F0F8F8 100%);
+    min-height: 100vh;
   }
 
   html {
@@ -106,5 +108,60 @@
   
   .section-margin {
     @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .glass-card {
+    @apply bg-white/30 backdrop-blur-lg border border-white/20 rounded-2xl shadow-soft;
+  }
+
+  .gradient-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.7;
+    animation: blob 7s infinite;
+  }
+
+  .sparkle-btn {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sparkle-btn::before {
+    content: '✨';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 1.2em;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .sparkle-btn:hover::before {
+    animation: sparkle 1.5s ease-in-out;
+  }
+
+  .wave-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .wave-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+  }
+
+  .floating-decoration {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
   }
 }
