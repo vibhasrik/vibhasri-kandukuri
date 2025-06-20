@@ -30,26 +30,41 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center section-padding relative overflow-hidden">
-      {/* Enhanced animated gradient blobs - more evenly distributed with additional ones */}
+      {/* Enhanced animated gradient blobs - many more distributed across the screen */}
+      
+      {/* Top section blobs */}
       <div className="gradient-blob w-80 h-80 bg-coral/20 top-16 left-8 animate-blob"></div>
       <div className="gradient-blob w-64 h-64 bg-teal/15 top-32 right-12 animate-blob" style={{ animationDelay: '2s' }}></div>
-      <div className="gradient-blob w-96 h-96 bg-plum/10 bottom-24 left-1/4 animate-blob" style={{ animationDelay: '4s' }}></div>
+      <div className="gradient-blob w-52 h-52 bg-coral/12 top-8 left-1/4 animate-blob" style={{ animationDelay: '9s' }}></div>
+      <div className="gradient-blob w-36 h-36 bg-teal/18 top-4 left-1/3 animate-blob" style={{ animationDelay: '10s' }}></div>
+      <div className="gradient-blob w-44 h-44 bg-plum/14 top-20 left-1/2 animate-blob" style={{ animationDelay: '11s' }}></div>
+      <div className="gradient-blob w-68 h-68 bg-coral/16 top-12 right-1/4 animate-blob" style={{ animationDelay: '15s' }}></div>
+      <div className="gradient-blob w-40 h-40 bg-plum/12 top-24 right-1/3 animate-blob" style={{ animationDelay: '16s' }}></div>
+
+      {/* Middle section blobs */}
       <div className="gradient-blob w-48 h-48 bg-coral/15 top-1/3 right-1/3 animate-blob" style={{ animationDelay: '1s' }}></div>
-      <div className="gradient-blob w-72 h-72 bg-teal/12 bottom-1/4 left-16 animate-blob" style={{ animationDelay: '5s' }}></div>
+      <div className="gradient-blob w-72 h-72 bg-teal/12 top-1/2 left-16 animate-blob" style={{ animationDelay: '5s' }}></div>
       <div className="gradient-blob w-56 h-56 bg-plum/15 top-2/3 right-24 animate-blob" style={{ animationDelay: '3s' }}></div>
-      <div className="gradient-blob w-40 h-40 bg-coral/10 bottom-16 right-1/4 animate-blob" style={{ animationDelay: '6s' }}></div>
       <div className="gradient-blob w-88 h-88 bg-teal/8 top-1/4 left-1/3 animate-blob" style={{ animationDelay: '7s' }}></div>
+      <div className="gradient-blob w-60 h-60 bg-coral/14 top-1/2 right-1/4 animate-blob" style={{ animationDelay: '17s' }}></div>
+      <div className="gradient-blob w-76 h-76 bg-plum/11 top-2/5 left-2/3 animate-blob" style={{ animationDelay: '18s' }}></div>
+
+      {/* Bottom section blobs */}
+      <div className="gradient-blob w-96 h-96 bg-plum/10 bottom-24 left-1/4 animate-blob" style={{ animationDelay: '4s' }}></div>
       <div className="gradient-blob w-32 h-32 bg-plum/20 bottom-1/3 right-8 animate-blob" style={{ animationDelay: '8s' }}></div>
-      
-      {/* Additional bubbles for top left */}
-      <div className="gradient-blob w-52 h-52 bg-coral/12 top-8 left-4 animate-blob" style={{ animationDelay: '9s' }}></div>
-      <div className="gradient-blob w-36 h-36 bg-teal/18 top-4 left-20 animate-blob" style={{ animationDelay: '10s' }}></div>
-      <div className="gradient-blob w-44 h-44 bg-plum/14 top-20 left-32 animate-blob" style={{ animationDelay: '11s' }}></div>
-      
-      {/* Additional bubbles for bottom right */}
-      <div className="gradient-blob w-60 h-60 bg-coral/16 bottom-8 right-4 animate-blob" style={{ animationDelay: '12s' }}></div>
-      <div className="gradient-blob w-28 h-28 bg-teal/22 bottom-4 right-20 animate-blob" style={{ animationDelay: '13s' }}></div>
-      <div className="gradient-blob w-48 h-48 bg-plum/12 bottom-20 right-32 animate-blob" style={{ animationDelay: '14s' }}></div>
+      <div className="gradient-blob w-60 h-60 bg-coral/16 bottom-8 right-1/4 animate-blob" style={{ animationDelay: '12s' }}></div>
+      <div className="gradient-blob w-28 h-28 bg-teal/22 bottom-4 right-1/3 animate-blob" style={{ animationDelay: '13s' }}></div>
+      <div className="gradient-blob w-48 h-48 bg-plum/12 bottom-20 right-1/2 animate-blob" style={{ animationDelay: '14s' }}></div>
+      <div className="gradient-blob w-84 h-84 bg-teal/10 bottom-16 left-1/3 animate-blob" style={{ animationDelay: '19s' }}></div>
+      <div className="gradient-blob w-52 h-52 bg-coral/13 bottom-32 left-1/2 animate-blob" style={{ animationDelay: '20s' }}></div>
+
+      {/* Additional scattered blobs for more coverage */}
+      <div className="gradient-blob w-40 h-40 bg-coral/10 bottom-16 right-1/4 animate-blob" style={{ animationDelay: '6s' }}></div>
+      <div className="gradient-blob w-64 h-64 bg-teal/14 top-3/4 left-8 animate-blob" style={{ animationDelay: '21s' }}></div>
+      <div className="gradient-blob w-36 h-36 bg-plum/16 bottom-2/3 right-16 animate-blob" style={{ animationDelay: '22s' }}></div>
+      <div className="gradient-blob w-72 h-72 bg-coral/9 top-1/6 right-8 animate-blob" style={{ animationDelay: '23s' }}></div>
+      <div className="gradient-blob w-44 h-44 bg-teal/17 bottom-1/2 left-4 animate-blob" style={{ animationDelay: '24s' }}></div>
+      <div className="gradient-blob w-56 h-56 bg-plum/13 top-5/6 right-1/6 animate-blob" style={{ animationDelay: '25s' }}></div>
 
       <div className="max-w-4xl mx-auto text-center animate-fade-in relative z-10">
         <div className="mb-8">
