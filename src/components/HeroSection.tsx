@@ -13,7 +13,7 @@ const HeroSection = () => {
   // TODO: Add functionality for View Resume button
   const handleViewResume = () => {
     // Add your resume link or PDF download logic here
-    window.open("Vibhasri_Kandukuri_Resume.pdf", "_blank");
+    window.open("/Vibhasri_Kandukuri_Resume.pdf", "_blank");
     console.log("View Resume clicked - add your resume functionality here");
   };
 
