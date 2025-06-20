@@ -55,11 +55,11 @@ const ExperienceSection = () => {
   const getTypeColor = (type: string) => {
     switch (type) {
       case "Software Engineering":
-        return "bg-gradient-to-r from-coral/20 to-coral/30 text-coral border-0";
+        return "bg-gradient-to-r from-coral to-coral/80 text-white border-0 shadow-md";
       case "Research":
-        return "bg-gradient-to-r from-teal/20 to-teal/30 text-teal border-0";
+        return "bg-gradient-to-r from-teal to-teal/80 text-white border-0 shadow-md";
       case "Data Science":
-        return "bg-gradient-to-r from-plum/20 to-plum/30 text-plum border-0";
+        return "bg-gradient-to-r from-plum to-plum/80 text-white border-0 shadow-md";
       default:
         return "bg-muted text-muted-foreground";
     }

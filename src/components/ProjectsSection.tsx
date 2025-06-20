@@ -2,7 +2,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 const projects = [
   {
@@ -10,40 +10,37 @@ const projects = [
     date: "Mar 2025",
     description: "Built a full shell in C with support for subshell command evaluation, wildcard expansion, redirection, and piping.",
     tech: ["C", "Unix", "Systems Programming", "Process Management"],
-    github: "#",
-    demo: "#"
+    showGithub: false
   },
   {
     title: "Simple C Compiler",
     date: "Nov 2024",
     description: "Wrote a custom C compiler that performs lexical analysis, parsing, and intermediate representation (IR) generation.",
     tech: ["C", "Compiler Design", "Lexical Analysis", "Parsing"],
-    github: "#",
-    demo: "#"
+    showGithub: false
   },
   {
     title: "Personal Malloc in C",
     date: "Jan 2025",
     description: "Implemented a custom memory allocator using freelists and arenas, designed to mimic malloc/free behavior safely.",
     tech: ["C", "Memory Management", "Data Structures", "Systems"],
-    github: "#",
-    demo: "#"
+    showGithub: false
   },
   {
     title: "Android SQLite Java Bookstore",
     date: "Apr 2023",
     description: "Built a mobile application using Android Studio and SQLite to manage inventory and transactions for a bookstore.",
     tech: ["Java", "Android Studio", "SQLite", "Mobile Development"],
-    github: "#",
-    demo: "#"
+    showGithub: true,
+    github: "#" // TODO: Add your GitHub link here
   },
   {
     title: "Java Marketplace",
     date: "Nov 2023",
     description: "Simulated an e-commerce platform with a backend in Java, featuring user accounts, product listings, and cart logic.",
     tech: ["Java", "Backend Development", "E-commerce", "Object-Oriented Design"],
-    github: "#",
-    demo: "#"
+    showGithub: true,
+    github: "#" // TODO: Add your GitHub link here
   }
 ];
 
@@ -93,16 +90,14 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 
-                <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="glass-card border-charcoal/20 text-charcoal hover:bg-charcoal/5 hover:text-charcoal hover:scale-105 transition-all duration-200">
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </Button>
-                  <Button variant="outline" size="sm" className="glass-card border-teal/30 text-teal hover:bg-teal/10 hover:text-teal hover:scale-105 transition-all duration-200">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Demo
-                  </Button>
-                </div>
+                {project.showGithub && (
+                  <div className="flex gap-3">
+                    <Button variant="outline" size="sm" className="glass-card border-charcoal/20 text-charcoal hover:bg-charcoal/5 hover:text-charcoal hover:scale-105 transition-all duration-200">
+                      <Github className="w-4 h-4 mr-2" />
+                      Code
+                    </Button>
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}

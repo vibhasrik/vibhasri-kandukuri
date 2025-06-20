@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
 
 const HeroSection = () => {
   // TODO: Add functionality for View Resume button
@@ -9,23 +8,22 @@ const HeroSection = () => {
     console.log("View Resume clicked - add your resume functionality here");
   };
 
-  // TODO: Add functionality for Contact Me button
   const handleContactMe = () => {
-    // Add smooth scroll to contact section or modal logic here
-    console.log("Contact Me clicked - add your contact functionality here");
-    // Example: document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <section className="min-h-screen flex items-center justify-center section-padding relative overflow-hidden">
-      {/* Enhanced animated gradient blobs - more bubbles for feminized look */}
-      <div className="gradient-blob w-72 h-72 bg-coral/20 top-20 -left-20 animate-blob"></div>
-      <div className="gradient-blob w-96 h-96 bg-teal/15 top-40 -right-32 animate-blob" style={{ animationDelay: '2s' }}></div>
-      <div className="gradient-blob w-64 h-64 bg-plum/10 bottom-20 left-1/3 animate-blob" style={{ animationDelay: '4s' }}></div>
-      <div className="gradient-blob w-48 h-48 bg-coral/15 top-1/4 right-1/4 animate-blob" style={{ animationDelay: '1s' }}></div>
-      <div className="gradient-blob w-56 h-56 bg-teal/12 bottom-1/3 -left-10 animate-blob" style={{ animationDelay: '5s' }}></div>
-      <div className="gradient-blob w-40 h-40 bg-plum/15 top-3/4 right-20 animate-blob" style={{ animationDelay: '3s' }}></div>
-      <div className="gradient-blob w-32 h-32 bg-coral/10 bottom-10 right-1/3 animate-blob" style={{ animationDelay: '6s' }}></div>
+      {/* Enhanced animated gradient blobs - more evenly distributed */}
+      <div className="gradient-blob w-80 h-80 bg-coral/20 top-16 left-8 animate-blob"></div>
+      <div className="gradient-blob w-64 h-64 bg-teal/15 top-32 right-12 animate-blob" style={{ animationDelay: '2s' }}></div>
+      <div className="gradient-blob w-96 h-96 bg-plum/10 bottom-24 left-1/4 animate-blob" style={{ animationDelay: '4s' }}></div>
+      <div className="gradient-blob w-48 h-48 bg-coral/15 top-1/3 right-1/3 animate-blob" style={{ animationDelay: '1s' }}></div>
+      <div className="gradient-blob w-72 h-72 bg-teal/12 bottom-1/4 left-16 animate-blob" style={{ animationDelay: '5s' }}></div>
+      <div className="gradient-blob w-56 h-56 bg-plum/15 top-2/3 right-24 animate-blob" style={{ animationDelay: '3s' }}></div>
+      <div className="gradient-blob w-40 h-40 bg-coral/10 bottom-16 right-1/4 animate-blob" style={{ animationDelay: '6s' }}></div>
+      <div className="gradient-blob w-88 h-88 bg-teal/8 top-1/4 left-1/3 animate-blob" style={{ animationDelay: '7s' }}></div>
+      <div className="gradient-blob w-32 h-32 bg-plum/20 bottom-1/3 right-8 animate-blob" style={{ animationDelay: '8s' }}></div>
 
       <div className="max-w-4xl mx-auto text-center animate-fade-in relative z-10">
         <div className="mb-8">
@@ -62,10 +60,6 @@ const HeroSection = () => {
           >
             Contact Me
           </Button>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
-          <ArrowDown className="w-6 h-6 text-plum/70" />
         </div>
       </div>
 
