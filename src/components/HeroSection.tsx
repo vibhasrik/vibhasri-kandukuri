@@ -1,7 +1,16 @@
 
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 const HeroSection = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   // TODO: Add functionality for View Resume button
   const handleViewResume = () => {
     // Add your resume link or PDF download logic here
@@ -12,9 +21,16 @@ const HeroSection = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Calculate transform values based on scroll position
+  const nameTransform = Math.min(scrollY * 0.8, 300); // Move name to the right
+  const taglineTransform = Math.min(scrollY * 0.6, 250); // Move tagline to the left
+  const barOpacity = Math.max(1 - scrollY / 200, 0); // Fade out the bar
+  const descriptionTransform = Math.min(scrollY * 0.7, 275); // Move description to the right
+  const buttonsTransform = Math.min(scrollY * 0.5, 225); // Move buttons to the left
+
   return (
     <section className="min-h-screen flex items-center justify-center section-padding relative overflow-hidden">
-      {/* Enhanced animated gradient blobs - more evenly distributed */}
+      {/* Enhanced animated gradient blobs - more evenly distributed with additional ones */}
       <div className="gradient-blob w-80 h-80 bg-coral/20 top-16 left-8 animate-blob"></div>
       <div className="gradient-blob w-64 h-64 bg-teal/15 top-32 right-12 animate-blob" style={{ animationDelay: '2s' }}></div>
       <div className="gradient-blob w-96 h-96 bg-plum/10 bottom-24 left-1/4 animate-blob" style={{ animationDelay: '4s' }}></div>
@@ -24,19 +40,41 @@ const HeroSection = () => {
       <div className="gradient-blob w-40 h-40 bg-coral/10 bottom-16 right-1/4 animate-blob" style={{ animationDelay: '6s' }}></div>
       <div className="gradient-blob w-88 h-88 bg-teal/8 top-1/4 left-1/3 animate-blob" style={{ animationDelay: '7s' }}></div>
       <div className="gradient-blob w-32 h-32 bg-plum/20 bottom-1/3 right-8 animate-blob" style={{ animationDelay: '8s' }}></div>
+      
+      {/* Additional bubbles for top left */}
+      <div className="gradient-blob w-52 h-52 bg-coral/12 top-8 left-4 animate-blob" style={{ animationDelay: '9s' }}></div>
+      <div className="gradient-blob w-36 h-36 bg-teal/18 top-4 left-20 animate-blob" style={{ animationDelay: '10s' }}></div>
+      <div className="gradient-blob w-44 h-44 bg-plum/14 top-20 left-32 animate-blob" style={{ animationDelay: '11s' }}></div>
+      
+      {/* Additional bubbles for bottom right */}
+      <div className="gradient-blob w-60 h-60 bg-coral/16 bottom-8 right-4 animate-blob" style={{ animationDelay: '12s' }}></div>
+      <div className="gradient-blob w-28 h-28 bg-teal/22 bottom-4 right-20 animate-blob" style={{ animationDelay: '13s' }}></div>
+      <div className="gradient-blob w-48 h-48 bg-plum/12 bottom-20 right-32 animate-blob" style={{ animationDelay: '14s' }}></div>
 
       <div className="max-w-4xl mx-auto text-center animate-fade-in relative z-10">
         <div className="mb-8">
-          <h1 className="text-5xl md:text-7xl font-serif font-light tracking-tight mb-6 text-charcoal">
+          <h1 
+            className="text-5xl md:text-7xl font-serif font-light tracking-tight mb-6 text-charcoal transition-transform duration-300 ease-out"
+            style={{ transform: `translateX(${nameTransform}px)` }}
+          >
             Vibhasri Kandukuri
           </h1>
-          <div className="h-1 w-24 bg-gradient-to-r from-coral to-plum mx-auto mb-8 rounded-full"></div>
-          <p className="text-xl md:text-2xl text-plum font-light mb-6">
-            Computer Science @ Purdue | ML & Systems | Building Tech for Good
+          <div 
+            className="h-1 w-24 bg-gradient-to-r from-coral to-plum mx-auto mb-8 rounded-full transition-opacity duration-300"
+            style={{ opacity: barOpacity }}
+          ></div>
+          <p 
+            className="text-xl md:text-2xl text-plum font-light mb-6 transition-transform duration-300 ease-out"
+            style={{ transform: `translateX(-${taglineTransform}px)` }}
+          >
+            Computer Science @ Purdue | ML & SWE | Building Tech for Good
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto mb-12">
+        <div 
+          className="max-w-2xl mx-auto mb-12 transition-transform duration-300 ease-out"
+          style={{ transform: `translateX(${descriptionTransform}px)` }}
+        >
           <p className="text-lg text-muted-foreground leading-relaxed">
             Passionate Computer Science student at Purdue University with a focus on Machine Learning 
             and Systems. I build innovative solutions that make a positive impact on society through 
@@ -44,7 +82,10 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+        <div 
+          className="flex flex-col sm:flex-row gap-4 justify-center mb-16 transition-transform duration-300 ease-out"
+          style={{ transform: `translateX(-${buttonsTransform}px)` }}
+        >
           <Button 
             size="lg" 
             onClick={handleViewResume}
