@@ -123,16 +123,24 @@ const ProjectsSection = () => {
                   ))}
                 </div>
 
-                {project.showGithub && (
+                {project.showGithub && project.github && (
                   <div className="flex gap-3">
-                    <Button
-                      variant="outline"
-                      size="sm"
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="glass-card border-charcoal/20 text-charcoal hover:bg-charcoal/5 hover:text-charcoal hover:scale-105 transition-all duration-200"
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        padding: "0.5rem 1rem",
+                        borderRadius: "0.375rem",
+                        border: "1px solid #ccc",
+                      }}
                     >
                       <Github className="w-4 h-4 mr-2" />
                       Code
-                    </Button>
+                    </a>
                   </div>
                 )}
               </CardContent>
