@@ -39,9 +39,9 @@ const experiences = [
     date: "Aug 2024 – May 2025",
     type: "Research",
     highlights: [
-      "Optimized drone mapping and targeted fertilizer application, reducing resource usage by 30–70%",
-      "Generated flight waypoints from shapefiles using Python + QGroundControl",
-      "Acted as Team Lead, coordinating across multiple sub-teams",
+      "Optimized drone mapping and targeted fertilizer application, to save 30-70% resources, achieving faster, cost-effective, and environmentally friendly results",
+      "Developed a program to dynamically generate flight path waypoints from shapefiles using Python on QGroundControl maximizing drone battery life and image resolution for peak efficiency",
+      "Coordinated communication between my sub-team and other teams, as Team Lead ensuring smooth collaboration and project alignment",
     ],
   },
   {
@@ -62,13 +62,13 @@ const experiences = [
     date: "Aug 2023 – May 2024",
     type: "Research",
     highlights: [
-      "Developed a Flutter app for EV fleet battery tracking + charger scheduling",
-      "Predicted battery SoC using machine learning",
+      "Developed a Flutter app for Caterpillar vehicle managers to track EV fleet battery + schedule chargers",
+      "Predicted battery SoC using time series ARIMA forecasting",
       "Integrated frontend and backend analytics in Dart/Flutter",
     ],
   },
   {
-    role: "Project Manager & Web Developer Intern",
+    role: "Project Lead & Web Developer Intern",
     company: "Hampshire Academia",
     location: "Remote",
     date: "Jun 2022 – Nov 2022",
