@@ -70,13 +70,11 @@ const EducationSection = () => {
               <div className="flex flex-wrap gap-2 justify-center">
                 {[
                   "Data Structures & Algorithms",
-                  "Machine Learning",
-                  "Database Systems",
-                  "Software Engineering",
-                  "Computer Systems",
+                  "Analysis of Algorithms",
                   "Statistical Methods",
                   "Linear Algebra",
                   "Discrete Mathematics",
+                  "Berkely Artificial Intelligence",
                 ].map((course, index) => (
                   <Badge
                     key={index}
