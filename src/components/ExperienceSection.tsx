@@ -9,27 +9,39 @@ import { Badge } from "@/components/ui/badge";
 
 const experiences = [
   {
-    role: "Treasurer",
-    company: "Google Developer Group at Purdue University",
-    location: "West Lafayette, IN",
-    date: "Dev 2024 – Present",
-    type: "Leadership",
-    highlights: [
-      "Coordinated funding, registration, and logistics to establish GDG as a recognized student organization and expand access to Google technologies on campus.",
-      "Organized and delivered a hands-on workshop on the Gemini API, teaching ~100 students how to build AI/ML applications during a campus hackathon",
-      "Facilitated developer community growth by managing outreach, partnerships, and technical events focused on Google Cloud, APIs, and AI-driven development tools",
-    ],
-  },
-  {
     role: "Undergraduate TA Scrum Master",
     company: "Lincoln Financial Group – Purdue University",
     location: "West Lafayette, IN",
-    date: "Aug 2025 – Present",
+    date: "Aug 2025 – Dec 2025",
     type: "Job",
     highlights: [
       "Led a team of 11 in developing predictive modeling on annuity datasets using Python and machine learning techniques",
       "Coordinating sprints, deliverables, and stakeholder updates using agile project management practices",
       "Partnered with cross-functional teams to analyze policyholder lapse and withdrawal behaviors, enabling data-driven insights that support financial risk assessment and strategic decision-making",
+    ],
+  },
+  {
+    role: "Undergraduate TA Scrum Master",
+    company: "Zimmer Biomet – Purdue University",
+    location: "West Lafayette, IN",
+    date: "Jan 2026 – May 2026",
+    type: "Job",
+    highlights: [
+      "Led a team of 8, facilitating Agile development workflows, sprint planning, and stakeholder communication for a healthcare data enrichment project",
+      "Coordinated development of healthcare data enrichment workflows using National Provider Identifier (NPI) Registry web scraping to map provider identifiers to enterprise hospital datasets, improving dataset completeness and supporting downstream analytics and customer intelligence workflows",
+      "Supported integration and evaluation of Snowflake Cortex AI agents for natural-language querying of enterprise healthcare datasets, helping explore methods for improving accessibility of customer insights and data exploration for non-technical stakeholders",
+    ],
+  },
+  {
+    role: "Treasurer",
+    company: "Google Developer Group at Purdue University",
+    location: "West Lafayette, IN",
+    date: "Dec 2024 – Dec 2025",
+    type: "Leadership",
+    highlights: [
+      "Coordinated funding, registration, and logistics to establish GDG as a recognized student organization and expand access to Google technologies on campus.",
+      "Organized and delivered a hands-on workshop on the Gemini API, teaching ~100 students how to build AI/ML applications during a campus hackathon",
+      "Facilitated developer community growth by managing outreach, partnerships, and technical events focused on Google Cloud, APIs, and AI-driven development tools",
     ],
   },
   {
