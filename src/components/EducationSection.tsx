@@ -55,9 +55,9 @@ const EducationSection = () => {
               <Badge className="bg-gradient-to-r from-teal to-teal/80 text-white px-4 py-2 text-base border-0 shadow-md">
                 Concentration: Machine Learning
               </Badge>
-              <Badge className="bg-gradient-to-r from-plum to-plum/80 text-white px-4 py-2 text-base border-0 shadow-md">
+              {/* <Badge className="bg-gradient-to-r from-plum to-plum/80 text-white px-4 py-2 text-base border-0 shadow-md">
                 Minor: Finance
-              </Badge>
+              </Badge> */}
               <Badge className="bg-gradient-to-r from-coral to-coral/80 text-white px-4 py-2 text-base border-0 shadow-md">
                 Certificate: Applications of Data Science
               </Badge>
@@ -74,7 +74,8 @@ const EducationSection = () => {
                   "Statistical Methods",
                   "Linear Algebra",
                   "Discrete Mathematics",
-                  "Berkely Artificial Intelligence",
+                  "Artificial Intelligence",
+                  "Data Mining and Machine Learning",
                 ].map((course, index) => (
                   <Badge
                     key={index}

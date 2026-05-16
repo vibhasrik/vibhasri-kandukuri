@@ -67,6 +67,15 @@ const projects = [
     showGithub: true,
     github: "https://github.com/vibhasrik/solar_energy_forcasting",
   },
+  {
+    title: "Real or Rendered",
+    date: "Apr 2026",
+    description:
+      "Conducted an HCI research study on AI-generated image detection, revealing that short AI-literacy lessons increased user confidence more than actual detection accuracy.",
+    // tech: ["Python", "Machine Learning", "Data Analysis", "Solar Energy"],
+    showGithub: true,
+    github: "https://github.com/vibhasrik/real-or-rendered",
+  },
 ];
 
 const ProjectsSection = () => {
