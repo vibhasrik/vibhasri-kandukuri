@@ -9,6 +9,16 @@ import { Badge } from "@/components/ui/badge";
 
 const experiences = [
   {
+    role: "Software Engineering Intern",
+    company: "MasterCard",
+    location: "O'Fallon, MO",
+    date: "Jun 2026 – Aug 2026",
+    type: "Job",
+    highlights: [
+      "Developing a centralized developer knowledge platform using React and Fumadocs for an infrastructure design automation application (TypeScript, Python, React), with AI-powered knowledge retrieval to reduce support overhead",
+    ],
+  },
+  {
     role: "Undergraduate TA Scrum Master",
     company: "Lincoln Financial Group – Purdue University",
     location: "West Lafayette, IN",

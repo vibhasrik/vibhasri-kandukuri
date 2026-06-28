@@ -14,7 +14,7 @@ const HeroSection = () => {
   const handleViewResume = () => {
     // Add your resume link or PDF download logic here
     window.open("/Vibhasri_Kandukuri_Resume.pdf", "_blank");
-    console.log("View Resume clicked - add your resume functionality here");
+    console.log("View Resume clicked");
   };
 
   const handleContactMe = () => {
@@ -157,7 +157,8 @@ const HeroSection = () => {
             className="text-xl md:text-2xl text-plum font-light mb-6 transition-transform duration-300 ease-out"
             style={{ transform: `translateX(-${taglineTransform}px)` }}
           >
-            Computer Science @ Purdue | ML & SWE | Building Tech for Good
+            Computer Science @ Purdue | ML & SWE | Current SWE intern @
+            MasterCard
           </p>
         </div>
 
