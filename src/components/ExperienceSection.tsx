@@ -1,8 +1,49 @@
-
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const experiences = [
+  {
+    role: "Undergraduate TA Scrum Master",
+    company: "Lincoln Financial Group – Purdue University",
+    location: "West Lafayette, IN",
+    date: "Aug 2025 – Dec 2025",
+    type: "Job",
+    highlights: [
+      "Led a team of 11 in developing predictive modeling on annuity datasets using Python and machine learning techniques",
+      "Coordinating sprints, deliverables, and stakeholder updates using agile project management practices",
+      "Partnered with cross-functional teams to analyze policyholder lapse and withdrawal behaviors, enabling data-driven insights that support financial risk assessment and strategic decision-making",
+    ],
+  },
+  {
+    role: "Undergraduate TA Scrum Master",
+    company: "Zimmer Biomet – Purdue University",
+    location: "West Lafayette, IN",
+    date: "Jan 2026 – May 2026",
+    type: "Job",
+    highlights: [
+      "Led a team of 8, facilitating Agile development workflows, sprint planning, and stakeholder communication for a healthcare data enrichment project",
+      "Coordinated development of healthcare data enrichment workflows using National Provider Identifier (NPI) Registry web scraping to map provider identifiers to enterprise hospital datasets, improving dataset completeness and supporting downstream analytics and customer intelligence workflows",
+      "Supported integration and evaluation of Snowflake Cortex AI agents for natural-language querying of enterprise healthcare datasets, helping explore methods for improving accessibility of customer insights and data exploration for non-technical stakeholders",
+    ],
+  },
+  {
+    role: "Treasurer",
+    company: "Google Developer Group at Purdue University",
+    location: "West Lafayette, IN",
+    date: "Dec 2024 – Dec 2025",
+    type: "Leadership",
+    highlights: [
+      "Coordinated funding, registration, and logistics to establish GDG as a recognized student organization and expand access to Google technologies on campus.",
+      "Organized and delivered a hands-on workshop on the Gemini API, teaching ~100 students how to build AI/ML applications during a campus hackathon",
+      "Facilitated developer community growth by managing outreach, partnerships, and technical events focused on Google Cloud, APIs, and AI-driven development tools",
+    ],
+  },
   {
     role: "Team Lead & Software Engineering Researcher",
     company: "AgRPA – Purdue University",
@@ -10,10 +51,10 @@ const experiences = [
     date: "Aug 2024 – May 2025",
     type: "Research",
     highlights: [
-      "Optimized drone mapping and targeted fertilizer application, reducing resource usage by 30–70%",
-      "Generated flight waypoints from shapefiles using Python + QGroundControl",
-      "Acted as Team Lead, coordinating across multiple sub-teams"
-    ]
+      "Optimized drone mapping and targeted fertilizer application, to save 30-70% resources, achieving faster, cost-effective, and environmentally friendly results",
+      "Developed a program to dynamically generate flight path waypoints from shapefiles using Python on QGroundControl maximizing drone battery life and image resolution for peak efficiency",
+      "Coordinated communication between my sub-team and other teams, as Team Lead ensuring smooth collaboration and project alignment",
+    ],
   },
   {
     role: "Data Science Intern",
@@ -23,8 +64,8 @@ const experiences = [
     type: "Data Science",
     highlights: [
       "Analyzed patient data with Python (Pandas, NumPy)",
-      "Visualized correlations between diabetes and other health factors for preventative care plans"
-    ]
+      "Visualized correlations between diabetes and other health factors for preventative care plans",
+    ],
   },
   {
     role: "ML & Data Science Researcher",
@@ -33,22 +74,22 @@ const experiences = [
     date: "Aug 2023 – May 2024",
     type: "Research",
     highlights: [
-      "Developed a Flutter app for EV fleet battery tracking + charger scheduling",
-      "Predicted battery SoC using machine learning",
-      "Integrated frontend and backend analytics in Dart/Flutter"
-    ]
+      "Developed a Flutter app for Caterpillar vehicle managers to track EV fleet battery + schedule chargers",
+      "Predicted battery SoC using time series ARIMA forecasting",
+      "Integrated frontend and backend analytics in Dart/Flutter",
+    ],
   },
   {
-    role: "Project Manager & Web Developer Intern",
+    role: "Project Lead & Web Developer Intern",
     company: "Hampshire Academia",
     location: "Remote",
     date: "Jun 2022 – Nov 2022",
     type: "Software Engineering",
     highlights: [
       "Led agile team of 5 interns to build responsive web apps (HTML5, CSS3)",
-      "Served as Scrum Master and stakeholder liaison"
-    ]
-  }
+      "Served as Scrum Master and stakeholder liaison",
+    ],
+  },
 ];
 
 const ExperienceSection = () => {
@@ -66,43 +107,58 @@ const ExperienceSection = () => {
   };
 
   return (
-    <section id="experience" className="section-margin section-padding bg-white/20 backdrop-blur-sm relative">
+    <section
+      id="experience"
+      className="section-margin section-padding bg-white/20 backdrop-blur-sm relative"
+    >
       {/* Background decoration */}
-      <div className="gradient-blob w-96 h-96 bg-teal/10 top-10 -left-32 animate-blob" style={{ animationDelay: '2s' }}></div>
-      
+      <div
+        className="gradient-blob w-96 h-96 bg-teal/10 top-10 -left-32 animate-blob"
+        style={{ animationDelay: "2s" }}
+      ></div>
+
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">
+            Experience
+          </h2>
           <div className="h-1 w-16 bg-gradient-to-r from-coral to-plum mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-muted-foreground">
-            Professional experience across software engineering, research, and data science.
+            Professional experience across software engineering, research, and
+            data science.
           </p>
         </div>
 
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <Card key={index} className="glass-card relative border-l-4 border-l-coral hover:shadow-glow transition-all duration-300 hover:scale-[1.01]">
+            <Card
+              key={index}
+              className="glass-card relative border-l-4 border-l-coral hover:shadow-glow transition-all duration-300 hover:scale-[1.01]"
+            >
               <CardHeader className="pb-4">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                   <CardTitle className="text-xl font-medium text-charcoal">
                     {exp.role}
                   </CardTitle>
-                  <Badge className={getTypeColor(exp.type)}>
-                    {exp.type}
-                  </Badge>
+                  <Badge className={getTypeColor(exp.type)}>{exp.type}</Badge>
                 </div>
                 <CardDescription className="text-base">
-                  <span className="font-medium text-plum">{exp.company}</span> • {exp.location}
+                  <span className="font-medium text-plum">{exp.company}</span> •{" "}
+                  {exp.location}
                 </CardDescription>
-                <p className="text-sm text-muted-foreground font-mono bg-white/50 px-2 py-1 rounded-full inline-block w-fit">{exp.date}</p>
+                <p className="text-sm text-muted-foreground font-mono bg-white/50 px-2 py-1 rounded-full inline-block w-fit">
+                  {exp.date}
+                </p>
               </CardHeader>
-              
+
               <CardContent className="pt-0">
                 <ul className="space-y-3">
                   {exp.highlights.map((highlight, highlightIndex) => (
                     <li key={highlightIndex} className="flex items-start">
                       <div className="w-2 h-2 bg-gradient-to-r from-teal to-coral rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-muted-foreground leading-relaxed">{highlight}</span>
+                      <span className="text-muted-foreground leading-relaxed">
+                        {highlight}
+                      </span>
                     </li>
                   ))}
                 </ul>

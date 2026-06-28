@@ -8,7 +8,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
-import { title } from "process";
 
 const projects = [
   {
@@ -67,6 +66,15 @@ const projects = [
     showGithub: true,
     github: "https://github.com/vibhasrik/solar_energy_forcasting",
   },
+  {
+    title: "Real or Rendered",
+    date: "Apr 2026",
+    description:
+      "Conducted an HCI research study on AI-generated image detection, revealing that short AI-literacy lessons increased user confidence more than actual detection accuracy.",
+    tech: ["Python", "Machine Learning", "HCI Research", "AI Detection"],
+    showGithub: true,
+    github: "https://github.com/vibhasrik/real-or-rendered",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -123,16 +131,24 @@ const ProjectsSection = () => {
                   ))}
                 </div>
 
-                {project.showGithub && (
+                {project.showGithub && project.github && (
                   <div className="flex gap-3">
-                    <Button
-                      variant="outline"
-                      size="sm"
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="glass-card border-charcoal/20 text-charcoal hover:bg-charcoal/5 hover:text-charcoal hover:scale-105 transition-all duration-200"
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        padding: "0.5rem 1rem",
+                        borderRadius: "0.375rem",
+                        border: "1px solid #ccc",
+                      }}
                     >
                       <Github className="w-4 h-4 mr-2" />
                       Code
-                    </Button>
+                    </a>
                   </div>
                 )}
               </CardContent>
