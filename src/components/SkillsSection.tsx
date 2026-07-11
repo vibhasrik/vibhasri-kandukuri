@@ -10,7 +10,7 @@ const skillsData = {
     "Bash",
     "Dart",
     "HTML/CSS",
-    "SQLite",
+    "PostgreSQL",
     "x86-64 Assembly",
   ],
   "Tools/Skills": [

@@ -1,25 +1,30 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Linkedin, Github, ArrowUp } from "lucide-react";
 
 const ContactSection = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <section id="contact" className="section-margin section-padding relative">
       {/* Background decoration */}
-      <div className="gradient-blob w-80 h-80 bg-teal/10 top-10 left-1/4 animate-blob" style={{ animationDelay: '2s' }}></div>
-      
+      <div
+        className="gradient-blob w-80 h-80 bg-teal/10 top-10 left-1/4 animate-blob"
+        style={{ animationDelay: "2s" }}
+      ></div>
+
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">
+            Get In Touch
+          </h2>
           <div className="h-1 w-16 bg-gradient-to-r from-coral to-teal mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Let's connect! I'm always open to discussing new opportunities, collaborations, 
-            or just having a chat about technology and innovation.
+            Let's connect! I'm always open to discussing new opportunities,
+            collaborations, or just having a chat about technology and
+            innovation.
           </p>
         </div>
 
@@ -29,20 +34,22 @@ const ContactSection = () => {
               Ready to collaborate?
             </CardTitle>
           </CardHeader>
-          
+
           <CardContent className="space-y-6">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
+              <a
                 href="mailto:vibhasrik@gmail.com"
                 className="flex items-center justify-center gap-3 p-4 bg-gradient-to-r from-coral/10 to-coral/20 hover:from-coral/20 hover:to-coral/30 rounded-2xl transition-all duration-300 group hover:scale-105"
               >
                 <Mail className="w-5 h-5 text-coral group-hover:scale-110 transition-transform" />
-                <span className="text-charcoal font-medium">vibhasrik@gmail.com</span>
+                <span className="text-charcoal font-medium">
+                  vibhasrik [at] gmail [dot] com
+                </span>
               </a>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
+              <a
                 href="https://linkedin.com/in/vibhasrik"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -51,8 +58,8 @@ const ContactSection = () => {
                 <Linkedin className="w-5 h-5 text-teal group-hover:scale-110 transition-transform" />
                 <span className="text-charcoal">LinkedIn</span>
               </a>
-              
-              <a 
+
+              <a
                 href="https://github.com/vibhasrik"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,7 +71,7 @@ const ContactSection = () => {
             </div>
 
             <div className="text-center pt-6 border-t border-white/30">
-              <Button 
+              <Button
                 onClick={scrollToTop}
                 variant="outline"
                 className="sparkle-btn glass-card border-charcoal/20 text-charcoal hover:bg-charcoal/5 hover:text-charcoal hover:scale-105 transition-all duration-300"

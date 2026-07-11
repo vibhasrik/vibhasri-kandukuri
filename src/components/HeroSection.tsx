@@ -167,10 +167,9 @@ const HeroSection = () => {
           style={{ transform: `translateX(${descriptionTransform}px)` }}
         >
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Passionate Computer Science student at Purdue University with a
-            focus on Machine Learning and Systems. I build innovative solutions
-            that make a positive impact on society through thoughtful
-            engineering and data-driven insights.
+            CS senior at Purdue focused on Machine Learning and Systems. I enjoy
+            the full range, from training models to writing low-level systems
+            code, and I care about building things that actually bring impact.
           </p>
         </div>
 
