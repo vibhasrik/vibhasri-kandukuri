@@ -14,7 +14,7 @@ const HeroSection = () => {
   const handleViewResume = () => {
     // Add your resume link or PDF download logic here
     window.open("/Vibhasri_Kandukuri_Resume.pdf", "_blank");
-    console.log("View Resume clicked - add your resume functionality here");
+    console.log("View Resume clicked");
   };
 
   const handleContactMe = () => {
@@ -157,7 +157,8 @@ const HeroSection = () => {
             className="text-xl md:text-2xl text-plum font-light mb-6 transition-transform duration-300 ease-out"
             style={{ transform: `translateX(-${taglineTransform}px)` }}
           >
-            Computer Science @ Purdue | ML & SWE | Building Tech for Good
+            Computer Science @ Purdue | ML & SWE | Current SWE intern @
+            MasterCard
           </p>
         </div>
 
@@ -166,10 +167,9 @@ const HeroSection = () => {
           style={{ transform: `translateX(${descriptionTransform}px)` }}
         >
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Passionate Computer Science student at Purdue University with a
-            focus on Machine Learning and Systems. I build innovative solutions
-            that make a positive impact on society through thoughtful
-            engineering and data-driven insights.
+            CS senior at Purdue focused on Machine Learning and Systems. I enjoy
+            the full range, from training models to writing low-level systems
+            code, and I care about building things that actually bring impact.
           </p>
         </div>
 
